@@ -1,4 +1,4 @@
-package com.lexus.bank.concretebank;
+package com.lexus.bank.concreteclasses;
 
 import com.lexus.bank.abstractclasses.subclass.SavingAccount;
 
