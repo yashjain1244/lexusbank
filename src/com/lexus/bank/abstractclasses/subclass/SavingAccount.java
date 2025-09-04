@@ -6,7 +6,7 @@ public abstract class SavingAccount extends BankAccount {
     private boolean isSalaried;
     private static final float MINBAL=10000;
 
-    public SavingAccount(int accountNo, String accountName, float accountBalance, boolean isSalaried) {
+    protected SavingAccount(int accountNo, String accountName, float accountBalance, boolean isSalaried) {
         super(accountNo, accountName, accountBalance);
         this.isSalaried = isSalaried;
     }
@@ -23,9 +23,11 @@ public abstract class SavingAccount extends BankAccount {
         if ((getAccountBalance()-amount)>MINBAL){
             super.withdrawMoney(amount);
             System.out.println("Transaction Successful.");
+            System.out.println();
         }
         else {
             System.out.println("Transaction Failed.");
+            System.out.println();
         }
     }
 

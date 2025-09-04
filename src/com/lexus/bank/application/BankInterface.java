@@ -23,11 +23,13 @@ public class BankInterface {
                 case 1 -> {
                     SavingAccount savingAccount = BankInterface.savingAccountCredentials(scanner);
                     System.out.println("Welcome "+savingAccount.getAccountName()+" Sir.");
+                    System.out.println();
                     SavingAccountUtility.savingAccountBanking(savingAccount);
                 }
                 case 2 -> {
                     CurrentAccount currentAccount = BankInterface.currentAccountCredentials(scanner);
                     System.out.println("Welcome "+currentAccount.getAccountName()+" Sir.");
+                    System.out.println();
                     CurrentAccountUtility.currentAccountBanking(currentAccount);
                 }
                 case 0 -> System.out.println("Thank you for Banking with us.");
@@ -39,6 +41,7 @@ public class BankInterface {
 
     private static int printMenu(Scanner scanner) {
         System.out.println("Welcome to The Lexus Bank LTD.");
+        System.out.println();
         System.out.println("1. Get New Saving Account.");
         System.out.println("2. Get New Current Account.");
         System.out.println("0. Exit...");
@@ -60,6 +63,7 @@ public class BankInterface {
         scanner.nextLine();
         System.out.print("Are you Salaried :- ");
         boolean isSal = scanner.nextBoolean();
+        System.out.println();
         return account.getNewSavingsAccount(accNo, name, accBal,isSal);
     }
 
@@ -78,6 +82,7 @@ public class BankInterface {
         scanner.nextLine();
         System.out.print("Credit Limit :- ");
         int minBal = scanner.nextInt();
+        System.out.println();
         return account.getNewCurrentAccount(accNo, name, accBal, minBal);
     }
 

@@ -19,9 +19,11 @@ public abstract class CurrentAccount extends BankAccount {
         if ((getAccountBalance()+creditLimit)>=amount){
             super.withdrawMoney(amount);
             System.out.println("Transaction Successful.");
+            System.out.println();
         }
         else {
             System.out.println("Transaction Failed.");
+            System.out.println();
         }
     }
 
