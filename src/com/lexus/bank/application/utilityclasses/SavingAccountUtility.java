@@ -44,5 +44,6 @@ public class SavingAccountUtility {
     private static void SavingAccountBalance(SavingAccount savingAccount){
         System.out.println("Your Available Account Balance :- " +
                 savingAccount.getAccountBalance()+"/- Rs.");
+        System.out.println();
     }
 }
