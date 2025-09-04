@@ -22,15 +22,15 @@ public class BankInterface {
             switch (choice) {
                 case 1 -> {
                     SavingAccount savingAccount = BankInterface.savingAccountCredentials(scanner);
-                    System.out.println(savingAccount.toString());
+                    System.out.println("Welcome "+savingAccount.getAccountName()+" Sir.");
                     SavingAccountUtility.savingAccountBanking(savingAccount);
                 }
                 case 2 -> {
                     CurrentAccount currentAccount = BankInterface.currentAccountCredentials(scanner);
-                    System.out.println(currentAccount.toString());
+                    System.out.println("Welcome "+currentAccount.getAccountName()+" Sir.");
                     CurrentAccountUtility.currentAccountBanking(currentAccount);
                 }
-                case 0 -> System.out.println("Bye... Bye...");
+                case 0 -> System.out.println("Thank you for Banking with us.");
                 default -> System.out.println("Invalid Input. Please Try Again.");
             }
         }while (choice!=0);
