@@ -3,7 +3,7 @@ package com.lexus.bank.application;
 import com.lexus.bank.abstractclasses.factory.BankFactory;
 import com.lexus.bank.abstractclasses.subclass.CurrentAccount;
 import com.lexus.bank.abstractclasses.subclass.SavingAccount;
-import com.lexus.bank.concretebank.LexusBankFactory;
+import com.lexus.bank.concreteclasses.LexusBankFactory;
 import com.lexus.bank.application.utilityclasses.CurrentAccountUtility;
 import com.lexus.bank.application.utilityclasses.SavingAccountUtility;
 
